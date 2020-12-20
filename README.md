@@ -2,12 +2,12 @@
 
 A aplicação agrega os números que mais foram sorteados na Mega-Sena desde 1996.
 
-A fonte dos dados é o [site da loterial](http://loterias.caixa.gov.br)
+A fonte dos dados é o [site da loteria da caixa](http://loterias.caixa.gov.br)
 
 
 # Utilização
 
-Para executar o script, acesse o terminal e abra uma sessão interativa do Mix com 
+Para executar o script, clone o projeto e abra uma sessão interativa do Mix com 
 
 ```
   iex -S mix
