@@ -4,7 +4,7 @@ defmodule Mega do
   def main() do
     tasks =
       1..get_last_game()
-      |> Task.async_stream(fn req -> req |> run end, timeout: 500_000)
+      |> Task.async_stream(fn req -> req |> run end, timeout: 60_000)
 
     tasks |> Enum.map(fn task -> elem(task, 1) end) |> process_data
   end
