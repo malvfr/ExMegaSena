@@ -31,11 +31,7 @@ defmodule Mega do
     |> to_keyword
     |> List.keysort(1)
     |> Enum.reverse()
-    |> print
-  end
-
-  defp print(kw_list) do
-    kw_list |> Enum.each(fn {k, v} -> IO.puts("#{k} => #{v}") end)
+    |> Output.output_data()
   end
 
   defp get_last_game() do
