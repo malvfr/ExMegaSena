@@ -1,22 +1,53 @@
 # Descrição
 
+Uma simples aplicação para listar ordenadamente os números mais sorteados da Mega-Sena.
+
 A aplicação agrega os números que mais foram sorteados na Mega-Sena desde 1996.
 
-A fonte dos dados é o [site da loteria da caixa](http://loterias.caixa.gov.br)
+A fonte dos dados é o [site da loteria da Caixa](http://loterias.caixa.gov.br)
 
+# Pré-requisitos 
+
+Para executar a aplicação, você deve ter o Elixir instalado em sua máquina.
+
+Você pode encontrar o tutorial de instalação do Elixir em sua [página oficial](https://elixir-lang.org/install.html)
 
 # Utilização
 
-Para executar o script, clone o projeto e abra uma sessão interativa do Mix com 
+Primeiramente, clone o projeto para algum diretório de sua preferência.
+
+Existem 2 modos rápidos de executar a aplicação. O primeiro é executar o seguinte comando no terminal (Você deve estar na raiz do projeto) e aguardar alguns segundos:
+
+O resultado do script será exposto diretamente no terminal e em um arquivo chamado "resultado.txt", que ficará na **raiz** do projeto.
+
+```
+  mix mega
+```
+
+O segundo método, é acessar o terminal na raiz do projeto e abrir uma sessão interativa no Iex 
 
 ```
   iex -S mix
 ```
 
-Execute a função principal
+e executar a função principal
 
 ```
   Mega.main
+```
+
+# Utilizar como dependência
+
+Adicionar a dependência no seu arquivo mix.exs na seção deps
+```
+
+defp deps do
+    [
+      ...
+      {:mega, "~> 0.1.0"}
+      ...
+    ]
+end
 ```
 
 # Resultados 
