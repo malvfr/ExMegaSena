@@ -26,4 +26,4 @@ mega-*.tar
 # Temporary files for e.g. tests
 /tmp
 
-resultado.txt
+resultado.*
