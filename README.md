@@ -53,7 +53,7 @@ end
 
 # Resultados
 
-Os resultados até hoje (20/12/2020) são os seguintes:
+Os resultados até hoje (04/10/2021) são os seguintes:
 
 | Número | Quantidade |
 | ------ | ---------- |
